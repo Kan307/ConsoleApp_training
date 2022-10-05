@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp_training
+{
+    // Kartクラスを継承してTurboKartクラスを作る
+    class TurboKart : Kart
+    {
+        // ブーストするメソッドのみ追加
+        public void Turbo()
+        {
+            Console.WriteLine("ブースト！");
+        }
+
+        // Hornメソッドをオーバーライドする
+        public override void Horn()
+        {
+            Console.WriteLine("ビービー");
+        }
+    }
+}
